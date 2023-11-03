@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".employeeModule.ui.gallery.GalleryFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        android:id="@+id/charges_layout">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:elevation="12dp"
+            app:cardCornerRadius="6dp"
+            >
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:id="@+id/start_fee"
+                   android:textStyle="bold"
+                   android:layout_marginTop="5dp"
+                   android:layout_width="wrap_content"
+                   android:textSize="20sp"
+                   android:fontFamily="serif-monospace"
+                   android:layout_gravity="center"
+                   android:layout_height="wrap_content"
+                   android:text="Fee charge" />
+
+               <TextView
+                   android:id="@+id/fee_charge"
+                   android:layout_marginTop="10dp"
+                   android:fontFamily="serif-monospace"
+                   android:textSize="18sp"
+                   android:layout_gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Ksh 150" />
+
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="49dp"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="10dp"
+                   android:text="Lipa na Mpesa"
+                   />
+           </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>

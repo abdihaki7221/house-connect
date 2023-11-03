@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/primary</item> <!-- Change to your desired text color -->
+        <item name="android:textSize">14sp</item> <!-- Change to your desired text size -->
+        <!-- Navigation Drawer -->
+        <item name="colorNavigationItem">@color/menu_item_color_state</item>
+
+        <item name="drawableNavigationItemBackground">@drawable/menu_background_color_state</item>
+    </style>
+
+    <style name="TransparentView">
+        <item name="background">@android:color/transparent</item>
+    </style>
+
+    <style name="Widget.Custom.NavigationView" parent="Widget.Design.NavigationView">
+        <item name="itemIconTint">?attr/colorNavigationItem</item>
+        <item name="itemTextColor">?attr/colorNavigationItem</item>
+        <item name="itemBackground">?attr/drawableNavigationItemBackground</item>
+    </style>
+
+    <!--<item name="itemHorizontalPadding">@dimen/navigation_item_padding</item>
+        <item name="elevation">@dimen/navigation_drawer_elevation</item>-->
+
+</resources>

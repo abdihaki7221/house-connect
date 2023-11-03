@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/home_layout"
+    tools:context=".employerModule.ui.home.EmployerHome">
+
+    <!-- CardView for Filter Options -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Filter by Job Type -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/max_layout"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:drawableStart="@drawable/ic_filter"
+                    android:id="@+id/filter_ic"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="8dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Filter by Category"
+                    android:fontFamily="serif-monospace"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="19sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="8dp"/>
+                <ImageView
+                    android:id="@+id/expand_ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_expand"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                  />
+
+            </RelativeLayout>
+
+            <!-- Additional Options (Initially Hidden) -->
+            <LinearLayout
+                android:id="@+id/additional_options_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_marginTop="8dp">
+
+                <!-- Job Type Options (You can use a Spinner or RadioGroup here) -->
+                <RadioGroup
+                    android:id="@+id/job_type_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:textSize="19sp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif-monospace"
+                        android:text="Part-Time"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif-monospace"
+                        android:textSize="19sp"
+                        android:text="Full-Time"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="19sp"
+                        android:fontFamily="serif-monospace"
+                        android:text="House Chores"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Filter by Location"
+                        android:textSize="18sp"
+                        android:fontFamily="serif-monospace"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"/>
+
+                    <!-- Location Options (You can use a Spinner or AutoCompleteTextView here) -->
+                    <Spinner
+                        android:id="@+id/location_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"/>
+
+                    <Button
+                        android:id="@+id/search_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Search"
+                        android:background="@color/primary"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="16dp"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <!-- Search Button -->
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
