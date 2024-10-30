@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">House Connect</string>
+    <string name="primary_color">Primary color</string>
+    <string name="button">Button</string>
+    <string name="secondary_color">Secondary color</string>
+    <string name="email_icon">email icon</string>
+    <string name="abdihakim">Abdihakim</string>
+    <string name="title_activity_employee_drawer">EmployeeDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Abdihakim issa</string>
+    <string name="nav_header_subtitle">abdihakim@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">logout</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="menu_home">Dashboard</string>
+    <string name="menu_gallery">Commission</string>
+    <string name="history">History</string>
+    <string name="menu_slideshow">Support</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_employee_dashboard">EmployeeDashboard</string>
+    <string name="phone">0725699181</string>
+    <string name="estate">Mugoya Estate South C</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiaGFrZWVtaXNzYW5kcm8iLCJhIjoiY2wzYTN1aXJ1MDF2bTNrb2lwODNpNDVhayJ9.z9U-41rcH6jqHo8V_R6mlg</string>
+    <string name="title_activity_employer_dashboard">EmployerDashboard</string>
+    <string name="pending_activation">You account is being activated kindly wait until the necessary checks are completed.</string>
+    <string name="enter_residence">Enter residence</string>
+
+</resources>

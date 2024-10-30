@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.houseconnect">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HouseConnect"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".employerModule.EmployeeDetailsActivity"
+            android:label="Employee Details">
+        </activity>
+
+        <activity
+            android:name=".employerModule.EmployerDashboard"
+            android:exported="true"
+            android:label="@string/title_activity_employer_dashboard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".employeeModule.EditProfile"
+            android:exported="false" >
+
+        </activity>
+        <activity
+            android:name=".employeeModule.EmployeeDashboard"
+            android:exported="false"
+            android:label="@string/title_activity_employee_dashboard"
+            android:theme="@style/Theme.HouseConnect.NoActionBar" />
+        <activity
+            android:name=".authModule.UserType"
+            android:exported="false" />
+        <activity
+            android:name=".authModule.UserInfo"
+            android:exported="false" />
+        <activity
+            android:name=".authModule.Otp"
+            android:exported="false" />
+        <activity
+            android:name=".authModule.SignIn"
+            android:exported="false">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" >
+
+
+        </activity>
+    </application>
+
+</manifest>
